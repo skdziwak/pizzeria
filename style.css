@@ -163,12 +163,11 @@ h1 {
 .bg2 {
     position: absolute;
     width: 100%;
-    min-height: 120%;
+    min-height: 100%;
     z-index: 0;
-    background-image: url("images/background2.jpeg");
+    background-image: url("images/background2-dark.jpeg");
     background-size: cover;
     background-attachment: fixed;
-    filter: brightness(50%);
 }
 
 table.cennik {
@@ -178,11 +177,5 @@ table.cennik {
 table.cennik td,th {
     padding: 10px 0;
     text-align: left;
-}
-table.cennik th {
     font-size: 23px;
-}
-table.cennik td {
-    font-size: 23px;
-    
 }

@@ -1,6 +1,24 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    const table = document.querySelector('#cennik');
+    console.log(table);
     httpGetAsync('menu.txt', (txt) => {
-        console.log(txt)
+        rows = txt.trim().split('\r\n');
+        var first = true;
+        rows.forEach(row => {
+            cells = row.split('\t');
+            var tr = document.createElement('tr');
+            tr.innerHTML = '<tr>'
+            cells.forEach(cell => {
+                if(first) {
+                    tr.innerHTML += '<th>' + cell + '</th>';
+                    first = false;
+                } else {
+                    tr.innerHTML += '<td>' + cell + '</td>';
+                }
+            })
+            tr.innerHTML += '</tr>'
+            table.appendChild(tr);
+        });
     });
 });
 
