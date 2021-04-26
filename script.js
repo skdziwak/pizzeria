@@ -11,11 +11,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
             cells.forEach(cell => {
                 if(first) {
                     tr.innerHTML += '<th>' + cell + '</th>';
-                    first = false;
                 } else {
                     tr.innerHTML += '<td>' + cell + '</td>';
                 }
             })
+            first = false;
             tr.innerHTML += '</tr>'
             table.appendChild(tr);
         });
