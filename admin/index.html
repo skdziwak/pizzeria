@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Panel administracyjny</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="..//fonts.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <ul class="navigation">
+            <li>
+                <h1 class="paneltitle">Admin Panel</h1>
+            </li>
+            <li class="menuitem"><a href="#dashboard">Strona główna</a></li>
+            <li class="menuitem"><a href="#orders">Zamówienia</a></li>
+            <li class="menuitem"><a href="#menu">Edytuj menu</a></li>
+            <li class="menuitem last"><a href="#settings">Ustawienia</a></li>
+        </ul>
+        <div class="content">
+            <div class="block" id="main_block">
+                <h1>STRONA GŁÓWNA</h1>
+                <div class="row">
+                    <div>
+                        <h2>Informacje ogólne</h2>
+                        Domena: skdziwak.github.io
+                    </div>
+                    <div>
+                        <h2>Pozdrowienia</h2>
+                        Pozdrawiam mame<br/>
+                        Pozdrawiam tate<br/>
+                        Pozdrawiam rodziców
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h1>Dodaj pizzę</h1>
+                <form>
+                    <label for="name">Nazwa pizzy:</label><br><input type="text" id="name" name="name"><br>
+                    <label for="sklad">Skladniki:</label><br><input type="text" id="sklad" name="sklad"><br>
+                    <input type="submit" value="DODAJ"></input>
+                </form>
+            </div>
+
+            
+        </div>
+    </body>
+</html>
