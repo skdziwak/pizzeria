@@ -170,17 +170,21 @@ h1 {
     background-attachment: fixed;
 }
 
-table.cennik {
+.menu {
     width: 100%;
     table-layout: auto;
+    border-collapse: collapse;
 }
-table.cennik td,th {
+.menu td,th {
     padding: 10px 0;
     text-align: left;
     font-size: 23px;
     white-space: pre-wrap;
+    border-bottom: 1px solid #FBFEF9;
+    margin: 0;
 }
-.sklad {
+
+.ingredients {
     font-family: Lato-Italic;
     font-size: 18px;
     padding-left: 22px;

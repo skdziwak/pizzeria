@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const table = document.querySelector('#cennik');
-    console.log(table);
+    const table = document.querySelector('.menu');
     httpGetAsync('menu.txt', (txt) => {
         rows = txt.trim().split('\r\n');
         var first = true;
@@ -15,7 +14,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     tr.innerHTML += '<th>' + cell + '</th>';
                 } else {
                     if (i == 0) {
-                        tr.innerHTML += '<td>' + cell + '<br/><a class="sklad">' + cells[4] + '</a></td>';
+                        tr.innerHTML += '<td>' + cell + '<br/><a class="ingredients">' + cells[4] + '</a></td>';
                     } else {
                         tr.innerHTML += '<td>' + cell + '</td>';
                     }
