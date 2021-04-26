@@ -10,3 +10,7 @@
     font-family: Lato-Black;
     src: url('fonts/Lato-Black.ttf');
 }
+@font-face {
+    font-family: Lato-Italic;
+    src: url('fonts/Lato-Italic.ttf');
+}
