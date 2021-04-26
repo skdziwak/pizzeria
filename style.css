@@ -178,4 +178,10 @@ table.cennik td,th {
     padding: 10px 0;
     text-align: left;
     font-size: 23px;
+    white-space: pre-wrap;
+}
+.sklad {
+    font-family: Lato-Italic;
+    font-size: 18px;
+    padding-left: 22px;
 }

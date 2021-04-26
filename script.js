@@ -7,14 +7,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
         rows.forEach(row => {
             cells = row.split('\t');
             var tr = document.createElement('tr');
-            tr.innerHTML = '<tr>'
-            cells.forEach(cell => {
+            tr.innerHTML = '<tr>';
+            
+            for(var i = 0 ; i < 4 ; i++) {
+                var cell = cells[i];
                 if(first) {
                     tr.innerHTML += '<th>' + cell + '</th>';
                 } else {
-                    tr.innerHTML += '<td>' + cell + '</td>';
+                    if (i == 0) {
+                        tr.innerHTML += '<td>' + cell + '<br/><a class="sklad">' + cells[4] + '</a></td>';
+                    } else {
+                        tr.innerHTML += '<td>' + cell + '</td>';
+                    }
                 }
-            })
+            }
             first = false;
             tr.innerHTML += '</tr>'
             table.appendChild(tr);
